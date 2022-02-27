@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 <body class="bg-[#f9f4e9]">
-    <header class="fixed top-0  z-10 w-screen bg-[#f9f4e9] py-4">
+    <header class="fixed top-0  z-10 w-screen bg-[#f9f4e9] py-4 lg:px-32">
         <div class="flex justify-between items-center px-5">
             <div class="flex items-center gap-4">
                 <img src="./Assets/Logo.svg" alt="logo">
@@ -24,19 +24,43 @@
                 </a>
             </div>
             
-            <img src="./Assets/menu.svg" alt="menu">
+            <img src="./Assets/menu.svg" alt="menu" class="lg:hidden">
+
+            <nav class="hidden lg:flex lg:gap-5">
+                <a href="#" class="font-playfair opacity-50 text-sm hover:underline hover:underline-offset-4 hover:decoration-blue-500 hover:decoration-4">
+                    Plans
+                </a>
+
+                <a href="#" class="font-playfair opacity-50 text-sm hover:underline hover:underline-offset-4 hover:decoration-blue-500 hover:decoration-4">
+                    Find Domain
+                </a>
+
+                <a href="#" class="font-playfair opacity-50 text-sm hover:underline hover:underline-offset-4 hover:decoration-blue-500 hover:decoration-4">
+                    Why Hosterr
+                </a>
+            </nav>
+
+            <div class="hidden lg:flex lg:items-center lg:gap-2">
+                <button class="bg-gray-200 p-4 rounded-lg text-sm">
+                    Sign in
+                </button>
+
+                <button type="submit" class="rounded-lg lg:p-4 bg-blue-600 text-white font-bai font-semibold hover:bg-blue-400 text-sm">
+                    Join Waitlist
+               </button>
+            </div>
         </div>
     </header>
 
-    <main class="pt-20">
-        <div class="h-[18rem] w-52 mx-auto">
+    <main class="pt-20  lg:pt-32 lg:flex lg:justify-evenly lg:flex-row-reverse lg:items-center lg:mx-32">
+        <div class="h-[18rem] w-52  mx-auto">
             <img src="./Assets/Blue Shape.svg" alt="" class="w-52 mx-auto -rotate-[40deg]">
             <img src="./Assets/Pink Shape.svg" alt="" class="w-52 relative bottom-[14rem] mx-auto -rotate-[30deg]">
             <img src="./Assets/Purple Shape.svg" alt="" class="w-52 relative bottom-[28rem] mx-auto -rotate-[20deg]">
             <img src="./Assets/Hero Image (Model).png" alt="" class="w-52 relative bottom-[42rem] mx-auto -rotate-[10deg]">
         </div>
         
-        <section class="pt-16 mx-5">
+        <section class="pt-16 mx-5 lg:w-min">
             <h1 class="text-4xl font-bold font-serif">
                 Host your website in less than 5 minutes.
             </h1>
@@ -45,9 +69,9 @@
                 With Hosterr, get your website up and running in no less than 5 minutes with the most competitive pricing packages available online.
             </p>
 
-            <div class="grid grid-cols-1 gap-2 pt-5">
-                <input type="email" name="email" id="" placeholder="Enter e-mail address" class="rounded-lg p-5 w-4/4 h-16">
-                <button type="submit" class="rounded-lg w-4/4 bg-blue-600 h-16 text-white font-bai font-semibold hover:bg-blue-400">
+            <div class="grid grid-cols-1 gap-2 pt-5 md:flex">
+                <input type="email" name="email" id="" placeholder="Enter e-mail address" class="rounded-lg p-5 w-4/4 md:w-72 h-16">
+                <button type="submit" class="rounded-lg w-4/4 md:w-40 bg-blue-600 h-16 text-white font-bai font-semibold hover:bg-blue-400">
                      Join Waitlist
                 </button>
             </div>
@@ -61,7 +85,7 @@
         </section>
     </main>
 
-    <footer class="pt-10 mx-5">
+    <footer class="pt-10 pb-5  lg:pt-20 mx-5 md:flex md:items-center md:gap-36 lg:justify-evenly">
         <nav class="flex gap-5">
             <div class="flex gap-2">
                 <img src="./Assets/facebook.svg" alt="" class="opacity-50">
@@ -82,7 +106,7 @@
             
         </nav>
 
-        <div class="flex gap-3 pt-10">
+        <div class="flex gap-3 pt-10 md:pt-0 ">
             <img src="./Assets/Help Avatar.svg" alt="Help">
 
             <div>
@@ -91,7 +115,9 @@
                 </p>
 
                 <p class="font-bold">
-                    Talk to a specialist
+                    <a href="#">
+                        Talk to a specialist
+                    </a>
                 </p>
             </div>
         </div>
